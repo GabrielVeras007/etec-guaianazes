@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int n,s;
+		
+		System.out.println("Insira um número:");
+		n = leia.nextInt();
+		s = n/n % 0;
+		
+		if( s == 0 ) {
+			System.out.println("O número"+n+"é primo");
+		}else
+			System.out.println("O número"+n+"não é primo");
+		
+		leia.close();
+	}
+}
